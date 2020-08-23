@@ -254,6 +254,9 @@ legend {
   line-height: inherit;
   color: inherit;
   white-space: normal; }
+  @media (max-width: 1200px) {
+    legend {
+      font-size: calc(1.275rem + 0.3vw) ; } }
 
 progress {
   vertical-align: baseline; }
@@ -295,12 +298,21 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .h1 {
   font-size: 2.025rem; }
+  @media (max-width: 1200px) {
+    h1, .h1 {
+      font-size: calc(1.3275rem + 0.93vw) ; } }
 
 h2, .h2 {
   font-size: 1.71rem; }
+  @media (max-width: 1200px) {
+    h2, .h2 {
+      font-size: calc(1.296rem + 0.552vw) ; } }
 
 h3, .h3 {
   font-size: 1.44rem; }
+  @media (max-width: 1200px) {
+    h3, .h3 {
+      font-size: calc(1.269rem + 0.228vw) ; } }
 
 h4, .h4 {
   font-size: 1.215rem; }
@@ -319,21 +331,33 @@ h6, .h6 {
   font-size: 4rem;
   font-weight: 300;
   line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .display-1 {
+      font-size: calc(1.525rem + 3.3vw) ; } }
 
 .display-2 {
   font-size: 3.5rem;
   font-weight: 300;
   line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .display-2 {
+      font-size: calc(1.475rem + 2.7vw) ; } }
 
 .display-3 {
   font-size: 3rem;
   font-weight: 300;
   line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .display-3 {
+      font-size: calc(1.425rem + 2.1vw) ; } }
 
 .display-4 {
   font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2; }
+  @media (max-width: 1200px) {
+    .display-4 {
+      font-size: calc(1.375rem + 1.5vw) ; } }
 
 hr {
   margin-top: 1rem;
@@ -3874,6 +3898,9 @@ input[type="button"].btn-block {
   color: #000;
   text-shadow: 0 1px 0 #fff;
   opacity: .5; }
+  @media (max-width: 1200px) {
+    .close {
+      font-size: calc(1.26rem + 0.12vw) ; } }
   .close:hover {
     color: #000;
     text-decoration: none; }
