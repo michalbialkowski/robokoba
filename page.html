@@ -9,39 +9,36 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,600i,700,700i,900&amp;subset=latin-ext">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
-    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
 </head>
 
 <body>
     <div>
         <header>
-            <div class="bg-light py-4">
+            <div class="bg-light py-4" style="box-shadow: inset 0px 10px 20px 0px rgba(0,0,0,.1);">
                 <div class="container">
                     <div class="row justify-content-between align-items-center">
                         <div class="col-auto"><a href="index.html"><img class="img-fluid width--200" src="assets/img/logo.svg"></a></div>
-                        <div class="col-auto">
+                        <div class="col-auto d-none d-lg-block">
                             <ul class="nav">
                                 <li class="nav-item dropdown"><a class="dropdown-toggle nav-link text-uppercase h4 mb-0" data-toggle="dropdown" aria-expanded="false" href="#">Kursy</a>
-                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="courses.html">Kursy online</a><a class="dropdown-item" role="presentation" href="page.html">Warsztaty</a><a class="dropdown-item" role="presentation" href="events.html">Wydarzenia</a>
-                                        <a
-                                            class="dropdown-item" role="presentation" href="page.html">Mentoring</a>
-                                    </div>
+                                    <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="courses.html">Kursy online</a><a class="dropdown-item" role="presentation" href="events.html">Wydarzenia</a><a class="dropdown-item" role="presentation" href="page.html">Mentoring</a></div>
                                 </li>
                                 <li class="nav-item"><a class="nav-link text-uppercase h4 mb-0" href="blog.html">Blog</a></li>
                                 <li class="nav-item"><a class="nav-link text-uppercase h4 mb-0" href="#">Sklep</a></li>
                                 <li class="nav-item"><a class="nav-link text-uppercase h4 mb-0" href="page.html">Kontakt</a></li>
                             </ul>
                         </div>
-                        <div class="col-auto">
-                            <div class="d-flex align-items-center"><button class="btn btn-primary p-0 ratio width--45 rounded-circle mr-3" type="button"><span><i class="fas fa-user" style="font-size: 21px;height: 18px;"></i></span></button>
-                                <form>
-                                    <div class="input-group bg-white border rounded-0"><input class="form-control border-0 bg-transparent" type="text" placeholder="Szukaj">
-                                        <div class="input-group-append"><button class="btn bg-transparent" type="button"><i class="icon-magnifier"></i></button></div>
+                        <div class="col-auto d-none d-md-block">
+                            <div class="d-flex align-items-center">
+                                <form class="mr--30">
+                                    <div class="input-group bg-white border rounded"><input class="form-control border-0 bg-transparent" type="text" placeholder="Szukaj">
+                                        <div class="input-group-append"><button class="btn bg-transparent" type="button"><i class="la la-search"></i></button></div>
                                     </div>
-                                </form>
-                            </div>
+                                </form><button class="btn p-0 ratio width--45 rounded-circle overflow-hidden" type="button"><span><img class="img-fluid" src="assets/img/icon-user-5.svg"></span></button></div>
                         </div>
+                        <div class="col-auto d-lg-none"><button class="btn p-0" type="button"><i class="la la-bars" style="font-size: 32px;"></i></button></div>
                     </div>
                 </div>
             </div>
@@ -57,9 +54,9 @@
             </div>
             <div class="py-5 border-bottom">
                 <div class="container">
-                    <h1 class="mb-4">Lorem ipsum dolor sit amet</h1>
+                    <h1 class="display-4 mb-4">Lorem ipsum dolor sit amet</h1>
                     <div class="row align-items-start">
-                        <div class="col-9">
+                        <div class="col-lg-9">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tempor dignissim diam, a interdum mauris dignissim a. Suspendisse id tristique augue, quis elementum ligula. Praesent quis imperdiet ex. Vestibulum ante ipsum primis
                                 in faucibus orci luctus et ultrices posuere cubilia curae; Integer velit leo, tincidunt vitae egestas quis, pulvinar eget orci. Praesent eu auctor nisl. Sed tempor urna vitae tortor congue finibus. Praesent tempus efficitur
                                 ornare.<br></p>
@@ -80,13 +77,13 @@
             </div>
             <div class="py--90">
                 <div class="container">
-                    <h1 class="text-center mb-2"><span class="mr-2">Zapisz się na</span><span class="text-primary">Newsletter</span></h1>
+                    <h1 class="display-4 text-center mb-2"><span class="mr-2">Zapisz się na</span><span class="text-primary">Newsletter</span></h1>
                     <p class="lead text-center text-black-50 font-weight-normal mb-3">Wpisz swój adres e-mail, aby regularnie otrzymywać oferty</p>
                     <div class="row justify-content-center">
-                        <div class="col-6">
+                        <div class="col-md-8 col-lg-6">
                             <form class="form-inline">
                                 <div class="input-group input-group-lg w-100"><input class="form-control" type="email" placeholder="Podaj swój adres e-mail">
-                                    <div class="input-group-append"><button class="btn btn-primary" type="button">Zapisz się</button></div>
+                                    <div class="input-group-append"><a class="btn btn-primary btn-lg text-uppercase font-weight-light mb-0" role="button" href="course.html"><i class="la la-check mr-2"></i><span>Zapisz się</span></a></div>
                                 </div>
                             </form>
                         </div>
@@ -95,12 +92,12 @@
             </div>
             <div class="bg-light py--60">
                 <div class="container">
-                    <div class="row row-cols-5">
-                        <div class="col"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
-                        <div class="col"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
-                        <div class="col"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
-                        <div class="col"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
-                        <div class="col"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
+                    <div class="row row-cols-xl-5 justify-content-center">
+                        <div class="col-sm-6 col-md-4 col-lg-3"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
+                        <div class="col-sm-6 col-md-4 col-lg-3"><img class="img-fluid" src="assets/img/logo-unity.svg"></div>
                     </div>
                 </div>
             </div>
@@ -111,16 +108,16 @@
                     <h3 class="text-primary">O mnie</h3>
                     <p class="lead mb-4">W maju 2020 RoboKoba została wyróżniona w Programie Shesnnovation Academy, organizowanym przez Perspektywy Woman in Tech, jako jeden z najbardziej innowacyjnych kobiecych technologicznych startup'ów na polskim rynku</p>
                     <div class="row mb-4">
-                        <div class="col-6">
+                        <div class="col-lg-6">
                             <h3 class="text-warning">Kontakt</h3>
                             <div class="row">
-                                <div class="col">
+                                <div class="col-sm-6">
                                     <ul class="list-unstyled lead">
                                         <li>+48 516 095 464</li>
                                         <li>info@robokoba.com</li>
                                     </ul>
                                 </div>
-                                <div class="col">
+                                <div class="col-sm-6">
                                     <div class="btn-group" role="group"><button class="btn text-white-50 p-0 mr-3" type="button"><i class="fab fa-facebook-square" style="font-size: 42px;height: 18px;"></i></button><button class="btn text-white-50 p-0 mr-3" type="button"><i class="fab fa-twitter" style="font-size: 42px;height: 18px;"></i></button>
                                         <button
                                             class="btn text-white-50 p-0 mr-3" type="button"><i class="fab fa-google-plus-g" style="font-size: 42px;height: 18px;"></i></button>
@@ -128,7 +125,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-6 col-lg-3">
                             <h3 class="text-success">Znajdź</h3>
                             <ul class="list-unstyled lead">
                                 <li><a class="text-light" href="page.html">Przewodnik</a></li>
@@ -136,7 +133,7 @@
                                 <li><a class="text-light" href="page.html">Polityka cookies</a></li>
                             </ul>
                         </div>
-                        <div class="col">
+                        <div class="col-sm-6 col-lg-3">
                             <h3 class="text-info">Zbadaj</h3>
                             <ul class="list-unstyled lead">
                                 <li><a class="text-light" href="page.html">Historia sukcesu</a></li>
